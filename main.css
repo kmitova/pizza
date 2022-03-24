@@ -145,3 +145,127 @@ p {
 img {
   width: 100%;
 }
+
+@media (min-width: 730px) {
+
+  section {
+    margin: 0 4em;
+  }
+
+    .form-container {
+    margin: 2em -4em 0;
+  }
+  h2::before {
+  content: "";
+  position: absolute;
+  width: 5em;
+  background: rgb(124, 7, 7);
+  height: .4em;
+  bottom: -.3em;
+  left: 7em;
+  z-index: -1;
+  margin-left: -.3em;
+  }
+}
+@media (min-width: 930px) {
+
+  .background {
+    text-align: left;
+  }
+
+  h1 {
+    text-align: center;
+  }
+  .background p {
+    margin: 0 0 3em;
+  }
+  .background section {
+    width: 65%;
+  }
+  .form-container {
+    margin: 2em 0 0;
+    padding: 2em;
+    border-radius: .5em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  form {
+    display: flex;
+  }
+  .form-left {
+    width: 70%;
+  }
+  label {
+    margin: 0;
+  }
+  input[type="button"] {
+    height: fit-content;
+    font-size: 1.1em;
+    margin-left: 1em;
+    margin-top: 2.2em;
+    padding: .7em 0;
+    width: 30%;
+  }
+  .background p {
+    margin-bottom: 0;
+  }
+
+  .heading {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: "bowl content";
+  }
+
+  .right-col {
+    grid-area: content;
+    padding: 0 10%;
+    text-align: left;
+    align-self:  center;
+  }
+
+  img {
+    grid-area: bowl;
+  }
+
+  h2 {
+    margin: 0;
+  }
+  h2::before {
+  content: "";
+  position: absolute;
+  width: 5em;
+  background: rgb(124, 7, 7);
+  height: .4em;
+  bottom: -0.3em;
+  left: 0em;
+  z-index: -1;
+  margin-left: -.3em;
+  }
+}
+
+@media (min-width: 1275px) { 
+    .hero-bg section {
+        width: 45%;
+        margin: 0 15%;
+    }
+    h1 {
+      text-align: center;
+    }
+  
+
+.top {
+  animation: fadeIn 2s forwards;
+  }
+}
+  
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-2em);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
