@@ -109,4 +109,39 @@ input[type=button] {
   font-size: 1.3em;
   cursor: pointer;
 }
+input[type=button]:hover {
+  background-color: rgb(109, 6, 6);
+}
 
+.heading {
+  margin: 0;
+}
+
+.right-col {
+  text-align: center;
+  margin: 3em 1em;
+}
+
+h2 {
+  text-transform: uppercase;
+  position: relative;
+}
+h2::before {
+  content: "";
+  position: absolute;
+  width: 5em;
+  background: rgb(124, 7, 7);
+  height: .4em;
+  bottom: 1em;
+  left: .5em;
+  z-index: -1;
+  margin-left: -.3em;
+}
+
+p {
+  line-height: 2em;
+}
+
+img {
+  width: 100%;
+}
